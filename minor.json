@@ -1,0 +1,7 @@
+[{"id": "Am", "i": "./assets/Am.jpg", "ii": "./assets/Bdim.jpg", "III": "./assets/C.jpg", "iv": "./assets/Dm.jpg", "v": "./assets/Em.jpg", "VI": "./assets/F.jpg", "VII": "./assets/G.jpg"},
+{"id": "Bm", "i": "./assets/Bm.jpg", "ii": "./assets/Csharpdim.jpg", "III": "./assets/D.jpg", "iv": "./assets/Em.jpg", "v": "./assets/Fsharpm.jpg", "VI": "./assets/G.jpg", "VII": "./assets/A.jpg"},
+{"id": "Cm", "i": "./assets/Cm.jpg", "ii": "./assets/Ddim.jpg", "III": "./assets/Eflat.jpg", "iv": "./assets/Fm.jpg", "v": "./assets/Gm.jpg", "VI": "./assets/Aflat.jpg", "VII": "./assets/Bflat.jpg"},
+{"id": "Dm", "i": "./assets/Dm.jpg", "ii": "./assets/Edim.jpg", "III": "./assets/F.jpg", "iv": "./assets/Gm.jpg", "v": "./assets/Am.jpg", "VI": "./assets/Bflat.jpg", "VII": "./assets/C.jpg"},
+{"id": "Em", "i": "./assets/Em.jpg", "ii": "./assets/Fsharpdim.jpg", "III": "./assets/G.jpg", "iv": "./assets/Am.jpg", "v": "./assets/Bm.jpg", "VI": "./assets/C.jpg", "VII": "./assets/D.jpg"},
+{"id": "Fm", "i": "./assets/Fm.jpg", "ii": "./assets/Gdim.jpg", "III": "./assets/Aflat.jpg", "iv": "./assets/Bflatm.jpg", "v": "./assets/Cm.jpg", "VI": "./assets/Dflat.jpg", "VII": "./assets/Eflat.jpg"},
+{"id": "Gm", "i": "./assets/Gm.jpg", "ii": "./assets/Adim.jpg", "III": "./assets/Bflat.jpg", "iv": "./assets/Cm.jpg", "v": "./assets/Dm.jpg", "VI": "./assets/Eflat.jpg", "VII": "./assets/F.jpg"}]
