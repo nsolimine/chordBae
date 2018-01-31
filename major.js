@@ -1,23 +1,20 @@
+var chords = [];
+
 (function startFetching() {
   const majAPI = "major.json";
   fetch(majAPI)
   .then(response => response.json())
-  .then(filterChords)
+  .then(data => chords = data)
   .catch(console.error)
 })();
 
 document.querySelector("#dropdown").addEventListener("change", function(event) {
   event.preventDefault();
-  displayChords();
+  var selectedKey = event.target.value
+  filterChords(chords, selectedKey);
 });
 
-function setOccasionMajor(sel) {
-  var majorSelected = sel.options[sel.selectedIndex].text;
-}
-
 function displayChords(key, chord1, chord2, chord3, chord4, chord5, chord6, chord7) {
-
-
   const chordDiv = document.querySelector("#chords")
   chordDiv.innerHTML = `
     <li>
@@ -55,17 +52,20 @@ function displayChords(key, chord1, chord2, chord3, chord4, chord5, chord6, chor
   return chordDiv.innerHTML
 };
 
-function filterChords(chords) {
+function filterChords(chords, id) {
   var majorChords = chords
-  for (var i = 0; i < majorChords.length; i++) {
-    let key = majorChords[i]['id'];
-    let chord1 = majorChords[i]['i'];
-    let chord2 = majorChords[i]['ii'];
-    let chord3 = majorChords[i]['iii'];
-    let chord4 = majorChords[i]['iv'];
-    let chord5 = majorChords[i]['v'];
-    let chord6 = majorChords[i]['vi'];
-    let chord7 = majorChords[i]['vii'];
+  var filtered = majorChords.filter((key, index) => {
+  return key.id === id
+  })
+  for (var i = 0; i < filtered.length; i++) {
+    let key = filtered[i]['id'];
+    let chord1 = filtered[i]['i'];
+    let chord2 = filtered[i]['ii'];
+    let chord3 = filtered[i]['iii'];
+    let chord4 = filtered[i]['iv'];
+    let chord5 = filtered[i]['v'];
+    let chord6 = filtered[i]['vi'];
+    let chord7 = filtered[i]['vii'];
     displayChords(key, chord1, chord2, chord3, chord4, chord5, chord6, chord7)
   }
 };
