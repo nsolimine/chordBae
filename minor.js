@@ -1,25 +1,25 @@
-(function startFetching() {
+var chordsMinor = [];
+
+(function startFetchingMinor() {
   const minAPI = "minor.json";
   fetch(minAPI)
   .then(response => response.json())
-  .then(filterChords)
+  .then(dataMinor =>
+    {chordsMinor = dataMinor
+  })
   .catch(console.error)
 })();
 
+
 document.querySelector("#dropdown2").addEventListener("change", function(event) {
   event.preventDefault();
-  displayChords();
+  var selectedKeyMinor = event.target.value
+  filterChordsMinor(chordsMinor, selectedKeyMinor);
 });
 
-function setOccasionMajor(sel) {
-  var majorSelected = sel.options[sel.selectedIndex].text;
-}
-
-function displayChords(key, chord1, chord2, chord3, chord4, chord5, chord6, chord7) {
-
-
-  const chordDiv = document.querySelector("#chords")
-  chordDiv.innerHTML = `
+function displayChordsMinor(key, chord1, chord2, chord3, chord4, chord5, chord6, chord7) {
+  const chordDivMinor = document.querySelector("#chordsDiv")
+  chordDivMinor.innerHTML = `
     <li>
       <p class="key">${key}</p>
       <div>
@@ -52,20 +52,23 @@ function displayChords(key, chord1, chord2, chord3, chord4, chord5, chord6, chor
       </div>
     </li>
   `
-  return chordDiv.innerHTML
+  return chordDivMinor.innerHTML
 };
 
-function filterChords(chords) {
-  var minorChords = chords
-  for (var i = 0; i < minorChords.length; i++) {
-    let key = minorChords[i]['id'];
-    let chord1 = minorChords[i]['i'];
-    let chord2 = minorChords[i]['ii'];
-    let chord3 = minorChords[i]['iii'];
-    let chord4 = minorChords[i]['iv'];
-    let chord5 = minorChords[i]['v'];
-    let chord6 = minorChords[i]['vi'];
-    let chord7 = minorChords[i]['vii'];
-    displayChords(key, chord1, chord2, chord3, chord4, chord5, chord6, chord7)
+function filterChordsMinor(chordsMinor, id) {
+  var minorChords = chordsMinor
+  var filteredMinor = minorChords.filter((key, index) => {
+  return key.id === id
+  })
+  for (var i = 0; i < filteredMinor.length; i++) {
+    let key = filteredMinor[i]['id'];
+    let chord1 = filteredMinor[i]['i'];
+    let chord2 = filteredMinor[i]['ii'];
+    let chord3 = filteredMinor[i]['iii'];
+    let chord4 = filteredMinor[i]['iv'];
+    let chord5 = filteredMinor[i]['v'];
+    let chord6 = filteredMinor[i]['vi'];
+    let chord7 = filteredMinor[i]['vii'];
+    displayChordsMinor(key, chord1, chord2, chord3, chord4, chord5, chord6, chord7)
   }
 };

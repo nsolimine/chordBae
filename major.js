@@ -4,7 +4,9 @@ var chords = [];
   const majAPI = "major.json";
   fetch(majAPI)
   .then(response => response.json())
-  .then(data => chords = data)
+  .then(data =>
+    {chords = data
+  })
   .catch(console.error)
 })();
 
@@ -15,7 +17,7 @@ document.querySelector("#dropdown").addEventListener("change", function(event) {
 });
 
 function displayChords(key, chord1, chord2, chord3, chord4, chord5, chord6, chord7) {
-  const chordDiv = document.querySelector("#chords")
+  const chordDiv = document.querySelector("#chordsDiv")
   chordDiv.innerHTML = `
     <li>
       <p class="key">${key}</p>
