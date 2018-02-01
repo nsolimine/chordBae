@@ -16,38 +16,64 @@ document.querySelector("#dropdown").addEventListener("change", function(event) {
   filterChords(chords, selectedKey);
 });
 
+function toggle() {
+  document.querySelector("span").classList.toggle("hidden")
+};
+
 function displayChords(key, chord1, chord2, chord3, chord4, chord5, chord6, chord7) {
   const chordDiv = document.querySelector("#chordsDiv")
   chordDiv.innerHTML = `
-    <li>
-      <p class="key">${key}</p>
-      <div>
-        <p>I</p>
-        <img src="${chord1}" alt="chord1">
-      </div>
-      <div>
-        <p>ii</p>
-        <img src="${chord2}" alt="chord2">
-      </div>
-      <div>
-        <p>iii</p>
-        <img src="${chord3}" alt="chord3">
-      </div>
-      <div>
-        <p>IV</p>
-        <img src="${chord4}" alt="chord4">
-      </div>
-      <div>
-        <p>V</p>
-        <img src="${chord5}" alt="chord5">
-      </div>
-      <div>
-        <p>vi</p>
-        <img src="${chord6}" alt="chord6">
-      </div>
-      <div>
-        <p>vii°</p>
-        <img src="${chord7}" alt="chord7">
+    <li class="display">
+      <p class="key bg-info">${key}</p>
+
+
+      <div class="animated fadeIn">
+
+
+        <div class="numeral">
+          <p>I</p>
+          <img src="${chord1}" alt="chord1">
+        </div>
+        <div class="numeral">
+          <p>ii</p>
+          <img src="${chord2}" alt="chord2">
+        </div>
+        <div class="numeral">
+          <p>iii</p>
+          <img src="${chord3}" alt="chord3">
+        </div>
+        <div class="numeral">
+          <p>IV</p>
+          <img src="${chord4}" alt="chord4">
+        </div>
+        <div class="numeral">
+          <p>V</p>
+          <img src="${chord5}" alt="chord5">
+        </div>
+        <div class="numeral">
+          <p>vi</p>
+          <img src="${chord6}" alt="chord6">
+        </div>
+        <div class="numeral">
+          <p>vii°</p>
+          <img src="${chord7}" alt="chord7">
+        </div>
+
+
+        <div class="button">
+        <button name="progression-ideas" id="progression-button" onclick="toggle()">Get Progression Ideas!</button>
+          <span class="hidden">
+            <ul>
+              <li>Pop: I – V – vi – IV</li>
+              <li>Rock and Roll: I - IV - V</li>
+              <li>50's: I - vi - IV - V</li>
+              <li>Blues: I – I – I – I – IV – IV – I – I – V – IV – I – I</li>
+              <li>Jazz: ii - V - I</li>
+            </ul>
+          </span>
+        </div>
+
+
       </div>
     </li>
   `

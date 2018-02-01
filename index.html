@@ -3,16 +3,29 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="main.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- reset -->
+  <link rel="stylesheet" href="reset.css">
+  <!-- Bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- animation -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  <!-- regular style -->
+  <link rel="stylesheet" href="main.css">
   <title>chordBae</title>
 </head>
 
 <body>
   <header>
     <div id="header">
-      <h1>chordBae</h1>
+      <h1 class="title">chordBae</h1>
+      <p>
+        Pick a key, either Major or Minor, the chords from that
+        key will display, and you're ready to start jamming!
+      </p>
     </div>
   </header>
 
@@ -20,7 +33,7 @@
     <div id="choices">
       <div id="major">
         <form action="#" id="dropdown">
-          <select name="major-chord-dropdown" id="drop">
+          <select name="major-chord-dropdown" id="drop" class="bg-info">
             <option value="value0" selected>Major</option>
             <option value="A Major">A Major</option>
             <option value="B Major">B Major</option>
@@ -35,7 +48,7 @@
 
       <div id="minor">
         <form action="#" id="dropdown2">
-          <select name="minor-chord-dropdown" id="drop">
+          <select name="minor-chord-dropdown" id="drop" class="bg-danger">
             <option value="value0" selected>Minor</option>
             <option value="A Minor">A minor</option>
             <option value="B Minor">B minor</option>
@@ -49,10 +62,8 @@
       </div>
     </div>
 
-    <div>
-      <ul id="chordsDiv">
-      </ul>
-      <ul id="chordsDiv2">
+    <div class="container-fluid">
+      <ul id="chordsDiv" class="container-fluid">
       </ul>
     </div>
 

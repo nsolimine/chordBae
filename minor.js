@@ -17,38 +17,62 @@ document.querySelector("#dropdown2").addEventListener("change", function(event) 
   filterChordsMinor(chordsMinor, selectedKeyMinor);
 });
 
+function toggleMinor() {
+  document.querySelector("span").classList.toggle("hidden")
+};
+
 function displayChordsMinor(key, chord1, chord2, chord3, chord4, chord5, chord6, chord7) {
   const chordDivMinor = document.querySelector("#chordsDiv")
   chordDivMinor.innerHTML = `
-    <li>
-      <p class="key">${key}</p>
-      <div>
-        <p>i</p>
-        <img src="${chord1}" alt="chord1">
-      </div>
-      <div>
-        <p>ii°</p>
-        <img src="${chord2}" alt="chord2">
-      </div>
-      <div>
-        <p>III</p>
-        <img src="${chord3}" alt="chord3">
-      </div>
-      <div>
-        <p>iv</p>
-        <img src="${chord4}" alt="chord4">
-      </div>
-      <div>
-        <p>v</p>
-        <img src="${chord5}" alt="chord5">
-      </div>
-      <div>
-        <p>VI</p>
-        <img src="${chord6}" alt="chord6">
-      </div>
-      <div>
-        <p>VII</p>
-        <img src="${chord7}" alt="chord7">
+    <li class="display">
+      <p class="key bg-danger">${key}</p>
+
+
+      <div class="animated fadeIn">
+
+
+        <div class="numeral">
+          <p>i</p>
+          <img src="${chord1}" alt="chord1">
+        </div>
+        <div class="numeral">
+          <p>ii°</p>
+          <img src="${chord2}" alt="chord2">
+        </div>
+        <div class="numeral">
+          <p>III</p>
+          <img src="${chord3}" alt="chord3">
+        </div>
+        <div class="numeral">
+          <p>iv</p>
+          <img src="${chord4}" alt="chord4">
+        </div>
+        <div class="numeral">
+          <p>v</p>
+          <img src="${chord5}" alt="chord5">
+        </div>
+        <div class="numeral">
+          <p>VI</p>
+          <img src="${chord6}" alt="chord6">
+        </div>
+        <div class="numeral">
+          <p>VII</p>
+          <img src="${chord7}" alt="chord7">
+        </div>
+
+        <div class="button">
+        <button name="progression-ideas-minor" id="progression-button-minor" onclick="toggleMinor()">Get Progression Ideas!</button>
+          <span class="hidden">
+            <ul>
+              <li>Ballad: i – VI – III – VII</li>
+              <li>Rock and Roll: i - iv - v</li>
+              <li>Classic Rock: i - VII - VI</li>
+              <li>Blues: i – i – i – i – iv – iv – i – i – v – iv – i – i</li>
+              <li>Jazz: i - VI - ii° - V</li>
+            </ul>
+          </span>
+        </div>
+
       </div>
     </li>
   `
