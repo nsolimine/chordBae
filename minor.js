@@ -10,7 +10,6 @@ var chordsMinor = [];
   .catch(console.error)
 })();
 
-
 document.querySelector("#dropdown2").addEventListener("change", function(event) {
   event.preventDefault();
   var selectedKeyMinor = event.target.value
@@ -19,6 +18,10 @@ document.querySelector("#dropdown2").addEventListener("change", function(event) 
 
 function toggleMinor() {
   document.querySelector("span").classList.toggle("hidden")
+};
+
+function toggleSuggestMinor() {
+  document.querySelector("aside").classList.toggle("hidden")
 };
 
 function displayChordsMinor(key, chord1, chord2, chord3, chord4, chord5, chord6, chord7) {
@@ -70,6 +73,20 @@ function displayChordsMinor(key, chord1, chord2, chord3, chord4, chord5, chord6,
               <li>Blues: i – i – i – i – iv – iv – i – i – v – iv – i – i</li>
               <li>Jazz: i - VI - ii° - V</li>
             </ul>
+
+            <button name="progression-suggestion-minor" id="suggestion-button-minor" onclick="toggleSuggestMinor()">Suggest A Progression!</button>
+            <aside class="hidden">
+            <form action="#" id="user-progression-minor" method="POST" class="">
+              <ul class="submit-form-minor">
+                <li>
+                  <label for="">Suggest A Progression:</label>
+                  <input type="text" id="suggest-minor" name="suggest-minor">
+                </li>
+              </ul>
+            <input type="submit" name="" value="submit">
+            </form>
+            </aside>
+
           </span>
         </div>
 

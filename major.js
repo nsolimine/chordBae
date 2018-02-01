@@ -20,15 +20,17 @@ function toggle() {
   document.querySelector("span").classList.toggle("hidden")
 };
 
+function toggleSuggest() {
+  document.querySelector("aside").classList.toggle("hidden")
+}
+
 function displayChords(key, chord1, chord2, chord3, chord4, chord5, chord6, chord7) {
   const chordDiv = document.querySelector("#chordsDiv")
   chordDiv.innerHTML = `
     <li class="display">
       <p class="key bg-info">${key}</p>
 
-
       <div class="animated fadeIn">
-
 
         <div class="numeral">
           <p>I</p>
@@ -59,7 +61,6 @@ function displayChords(key, chord1, chord2, chord3, chord4, chord5, chord6, chor
           <img src="${chord7}" alt="chord7">
         </div>
 
-
         <div class="button">
         <button name="progression-ideas" id="progression-button" onclick="toggle()">Get Progression Ideas!</button>
           <span class="hidden">
@@ -70,9 +71,21 @@ function displayChords(key, chord1, chord2, chord3, chord4, chord5, chord6, chor
               <li>Blues: I – I – I – I – IV – IV – I – I – V – IV – I – I</li>
               <li>Jazz: ii - V - I</li>
             </ul>
+
+            <button name="progression-suggestion" id="suggestion-button" onclick="toggleSuggest()">Suggest A Progression!</button>
+            <aside class="hidden">
+            <form action="#" id="user-progression" method="POST" class="">
+              <ul class="submit-form">
+                <li>
+                  <label for="">Suggest A Progression:</label>
+                  <input type="text" id="suggest" name="suggest">
+                </li>
+              </ul>
+            <input type="submit" name="" value="submit">
+            </form>
+            </aside>
           </span>
         </div>
-
 
       </div>
     </li>
