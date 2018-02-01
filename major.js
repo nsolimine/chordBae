@@ -28,9 +28,9 @@ function displayChords(key, chord1, chord2, chord3, chord4, chord5, chord6, chor
   const chordDiv = document.querySelector("#chordsDiv")
   chordDiv.innerHTML = `
     <li class="display">
-      <p class="key bg-info">${key}</p>
+      <p class="key bg-info animated fadeIn">${key}</p>
 
-      <div class="animated fadeIn">
+      <div class="animated fadeIn bank">
 
         <div class="numeral">
           <p>I</p>
@@ -60,34 +60,21 @@ function displayChords(key, chord1, chord2, chord3, chord4, chord5, chord6, chor
           <p>vii°</p>
           <img src="${chord7}" alt="chord7">
         </div>
+      </div>
 
         <div class="button">
         <button name="progression-ideas" id="progression-button" onclick="toggle()">Get Progression Ideas!</button>
           <span class="hidden">
-            <ul>
+            <ul class="progression-list animated fadeIn">
               <li>Pop: I – V – vi – IV</li>
               <li>Rock and Roll: I - IV - V</li>
               <li>50's: I - vi - IV - V</li>
               <li>Blues: I – I – I – I – IV – IV – I – I – V – IV – I – I</li>
               <li>Jazz: ii - V - I</li>
             </ul>
-
-            <button name="progression-suggestion" id="suggestion-button" onclick="toggleSuggest()">Suggest A Progression!</button>
-            <aside class="hidden">
-            <form action="#" id="user-progression" method="POST" class="">
-              <ul class="submit-form">
-                <li>
-                  <label for="">Suggest A Progression:</label>
-                  <input type="text" id="suggest" name="suggest">
-                </li>
-              </ul>
-            <input type="submit" name="" value="submit">
-            </form>
-            </aside>
           </span>
         </div>
 
-      </div>
     </li>
   `
   return chordDiv.innerHTML
@@ -110,3 +97,5 @@ function filterChords(chords, id) {
     displayChords(key, chord1, chord2, chord3, chord4, chord5, chord6, chord7)
   }
 };
+
+// -------------------------------------------------------------------------------//

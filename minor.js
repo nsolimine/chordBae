@@ -28,11 +28,9 @@ function displayChordsMinor(key, chord1, chord2, chord3, chord4, chord5, chord6,
   const chordDivMinor = document.querySelector("#chordsDiv")
   chordDivMinor.innerHTML = `
     <li class="display">
-      <p class="key bg-danger">${key}</p>
+      <p class="key bg-danger animated fadeIn">${key}</p>
 
-
-      <div class="animated fadeIn">
-
+      <div class="animated fadeIn bank">
 
         <div class="numeral">
           <p>i</p>
@@ -62,35 +60,21 @@ function displayChordsMinor(key, chord1, chord2, chord3, chord4, chord5, chord6,
           <p>VII</p>
           <img src="${chord7}" alt="chord7">
         </div>
+      </div>
 
         <div class="button">
         <button name="progression-ideas-minor" id="progression-button-minor" onclick="toggleMinor()">Get Progression Ideas!</button>
           <span class="hidden">
-            <ul>
+            <ul class="progression-list animated fadeIn">
               <li>Ballad: i – VI – III – VII</li>
               <li>Rock and Roll: i - iv - v</li>
               <li>Classic Rock: i - VII - VI</li>
               <li>Blues: i – i – i – i – iv – iv – i – i – v – iv – i – i</li>
               <li>Jazz: i - VI - ii° - V</li>
             </ul>
-
-            <button name="progression-suggestion-minor" id="suggestion-button-minor" onclick="toggleSuggestMinor()">Suggest A Progression!</button>
-            <aside class="hidden">
-            <form action="#" id="user-progression-minor" method="POST" class="">
-              <ul class="submit-form-minor">
-                <li>
-                  <label for="">Suggest A Progression:</label>
-                  <input type="text" id="suggest-minor" name="suggest-minor">
-                </li>
-              </ul>
-            <input type="submit" name="" value="submit">
-            </form>
-            </aside>
-
           </span>
         </div>
 
-      </div>
     </li>
   `
   return chordDivMinor.innerHTML

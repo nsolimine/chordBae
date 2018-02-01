@@ -1,6 +1,6 @@
 [{"id":"A Major", "i":"./assets/A.jpg", "ii": "./assets/Bm.jpg", "iii": "./assets/Csharpm.jpg", "iv": "./assets/D.jpg", "v": "./assets/E.jpg", "vi": "./assets/Fsharpm.jpg", "vii": "./assets/Gsharpdim.jpg"},
 {"id":"B Major", "i":"./assets/B.jpg", "ii": "./assets/Csharpm.jpg", "iii": "./assets/Dsharpm.jpg", "iv": "./assets/E.jpg", "v": "./assets/Fsharp.jpg", "vi": "./assets/Gsharpm.jpg", "vii": "./assets/Asharpdim.jpg"},
-{"id":"C Major", "i":"./assets/C.jpg", "ii": "./assets/Dm.jpg", "iii": "./assets/Em.jpg", "iv": "./assets/F.jpg", "v": "./assets/G.jpg", "vi": "./assets/Am.jpg", "vii": "./assets/Bdim.jpg"},
+{"id":"C Major", "i":"./assets/C.jpg", "audio": "./assets/C_64kb.mp3", "ii": "./assets/Dm.jpg", "iii": "./assets/Em.jpg", "iv": "./assets/F.jpg", "v": "./assets/G.jpg", "vi": "./assets/Am.jpg", "vii": "./assets/Bdim.jpg"},
 {"id":"D Major", "i":"./assets/D.jpg", "ii": "./assets/Em.jpg", "iii": "./assets/Fsharpm.jpg", "iv": "./assets/G.jpg", "v": "./assets/A.jpg", "vi": "./assets/Bm.jpg", "vii": "./assets/Csharpdim.jpg"},
 {"id":"E Major", "i":"./assets/E.jpg", "ii": "./assets/Fsharpm.jpg", "iii": "./assets/Gsharpm.jpg", "iv": "./assets/A.jpg", "v": "./assets/B.jpg", "vi": "./assets/Csharpm.jpg", "vii": "./assets/Dsharpdim.jpg"},
 {"id":"F Major", "i":"./assets/F.jpg", "ii": "./assets/Gm.jpg", "iii": "./assets/Am.jpg", "iv": "./assets/Bflat.jpg", "v": "./assets/C.jpg", "vi": "./assets/Dm.jpg", "vii": "./assets/Edim.jpg"},

@@ -26,3 +26,21 @@
   justify-content: center;
   margin: 1rem;
 }
+
+.bank {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.brochure {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+}
