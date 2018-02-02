@@ -7,24 +7,36 @@
   justify-content: center;
 }
 
-.key {
+.brochure {
   display: flex;
   justify-content: center;
-  margin: 1rem;
-  padding: 1rem;
+  text-align: center;
+  padding: 0 2rem 0.5rem 2rem;
+  font-size: 1.25rem;
 }
-
-.numeral {
-  display: flex;
-}
-
-
 
 #choices {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: 0 1rem;
+}
+
+#major {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+}
+
+#minor {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+}
+
+.key {
+  display: flex;
+  justify-content: center;
   margin: 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .bank {
@@ -33,14 +45,21 @@
   justify-content: center;
 }
 
-.brochure {
+.numeral {
   display: flex;
-  justify-content: center;
 }
 
 .button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 30%;
+  padding: 1.5rem;
+}
+
+.progression-list {
+  padding-top: 0.5rem;
+}
+
+.progression-list li {
+  margin: 0.25rem 0.25rem;
 }
