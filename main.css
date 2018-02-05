@@ -1,10 +1,11 @@
-#header {
-
-}
-
 .title {
   display: flex;
   justify-content: center;
+}
+
+h1 {
+  margin: 0;
+  padding: 1rem;
 }
 
 .brochure {
@@ -12,7 +13,7 @@
   justify-content: center;
   text-align: center;
   padding: 0 2rem 0.5rem 2rem;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 #choices {
@@ -35,8 +36,8 @@
 .key {
   display: flex;
   justify-content: center;
-  margin: 1rem;
-  padding: 0.5rem 1rem;
+  margin: 1rem 1rem 0.5rem 1rem;
+  padding: 0.25rem 1rem 0 1rem;
 }
 
 .bank {
@@ -47,6 +48,31 @@
 
 .numeral {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.major-circle {
+  width: 30px;
+	height: 30px;
+  padding: 4.5%;
+  border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+  text-align: center;
+  margin: 0.75rem 0 0.1rem 0;
+}
+
+.minor-circle {
+  width: 30px;
+	height: 30px;
+  padding: 4.5%;
+  border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+  text-align: center;
+  margin: 0.75rem 0 0.1rem 0;
 }
 
 .button {

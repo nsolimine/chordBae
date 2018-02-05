@@ -33,31 +33,31 @@ function displayChordsMinor(key, chord1, chord2, chord3, chord4, chord5, chord6,
       <div class="animated fadeIn bank">
 
         <div class="numeral">
-          <p>i</p>
+          <p class="bg-danger minor-circle">i</p>
           <img src="${chord1}" alt="chord1">
         </div>
         <div class="numeral">
-          <p>ii°</p>
+          <p class="bg-danger minor-circle">ii°</p>
           <img src="${chord2}" alt="chord2">
         </div>
         <div class="numeral">
-          <p>III</p>
+          <p class="bg-danger minor-circle">III</p>
           <img src="${chord3}" alt="chord3">
         </div>
         <div class="numeral">
-          <p>iv</p>
+          <p class="bg-danger minor-circle">iv</p>
           <img src="${chord4}" alt="chord4">
         </div>
         <div class="numeral">
-          <p>v</p>
+          <p class="bg-danger minor-circle">v</p>
           <img src="${chord5}" alt="chord5">
         </div>
         <div class="numeral">
-          <p>VI</p>
+          <p class="bg-danger minor-circle">VI</p>
           <img src="${chord6}" alt="chord6">
         </div>
         <div class="numeral">
-          <p>VII</p>
+          <p class="bg-danger minor-circle">VII</p>
           <img src="${chord7}" alt="chord7">
         </div>
       </div>
