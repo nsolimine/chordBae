@@ -63,7 +63,7 @@ function displayChordsMinor(key, chord1, chord2, chord3, chord4, chord5, chord6,
       </div>
 
         <div class="button">
-        <button name="progression-ideas-minor" class="animated fadeIn bg-success" id="progression-button-minor" onclick="toggleMinor()">Get Progression Ideas!</button>
+        <button name="progression-ideas-minor" class="animated fadeIn bg-success" id="progression-button-minor" onclick="toggleMinor()">&darr; Get Progression Ideas! &darr;</button>
           <span class="hidden">
             <ul class="progression-list animated fadeIn">
               <li>Rock and Roll: i - iv - v</li>

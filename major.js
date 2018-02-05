@@ -63,7 +63,7 @@ function displayChords(key, chord1, chord2, chord3, chord4, chord5, chord6, chor
       </div>
 
         <div class="button">
-        <button name="progression-ideas" class="animated fadeIn bg-success" id="progression-button" onclick="toggle()">Get Progression Ideas!</button>
+        <button name="progression-ideas" class="animated fadeIn bg-success" id="progression-button" onclick="toggle()">&darr; Get Progression Ideas! &darr;</button>
           <span class="hidden">
             <ul class="progression-list animated fadeIn">
               <li>Pop: I – V – vi – IV</li>
